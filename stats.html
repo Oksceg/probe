@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Статистика: ждете ли вы инопланетян?</title>
+
+    <style>
+        body {
+        background: #c7b39b url("https://www.kosova-sot.info/uploads/kosova-sot/images/2019/November/07/570x331_150701-strolhlic-ufo-tease_avkv8u1573126791.webp");
+        color: #87CEFA;
+        }
+    </style>
+</head>
+<body>
+       <table>
+        <tr>
+            <td><h2>Средний возраст</h2></td>
+            <td><h2>{{ all_info['age_mean'] }}</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Минимальный возраст</h2></td>
+            <td><h2>{{ all_info['age_min'] }}</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Максимальный возраст</h2></td>
+            <td><h2>{{ all_info['age_max'] }}</h2></td>
+        </tr>
+        <tr>
+            <td><h2>Средний ответ на вопрос: "Как думаете, произойдет ли вторжение инопланетян?"</td>
+            <td><h2>{{ all_info['q1_mean'] }}</h2></td>
+        </tr>
+    </table>
+</body>
+</html>

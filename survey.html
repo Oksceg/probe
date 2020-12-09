@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Опрос: ждете ли вы инопланетян?</title>
+    <style>
+        body {
+        background: #c7b39b url("https://wallpaperaccess.com/full/2876626.jpg");
+        color: #87CEFA;
+        }
+
+        .form-control {
+         width: 20%;
+         height: calc(1.5em + .75rem + 2px);
+         padding: .375rem .75rem;
+         font-size: 1rem;
+         line-height: 1.8;
+         background-color: #E0FFFF;
+         background-clip: padding-box;
+         border-radius: .25rem;
+         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+         }
+
+         textarea {
+	     resize: none;
+	     height: 100px;
+	     color: #495057;
+         background-color: #E0FFFF;
+         border-radius: .25rem;
+         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+         background-clip: padding-box;
+         }
+
+         .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+         width: 100%;
+         padding-right: 10px;
+         padding-left: 40px;
+         margin-right: auto;
+         margin-left: auto;
+         }
+
+         .btn-block {
+         display: block;
+         width: 40%;
+         font-family: Candara;
+         }
+
+    </style>
+</head>
+<body>
+    <form class="container" action="/process">
+        <h1><font color="CornflowerBlue" face="Candara">Опрос</font></h1>
+            <p>
+                <font size="5" face="Candara">Сколько вам лет? </font><input type="number" class="form-control" size="20" name="age">
+            </p>
+            <p>
+            <h2><font size="5" face="Candara">Как думаете, произойдет ли вторжение инопланетян?</font><br /></h2> <!-- break = перенос строки -->
+
+            <div class="custom-control custom-radio">
+                <input id="yes" name="Aliens" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="yes"><font size="4" face="Candara Light">Да</font><br /></label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input id="no" name="Aliens" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="no"><font size="4" face="Candara Light">Нет </font><br /></label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input id="normie" name="Aliens" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="normie"><font size="4" face="Candara Light">Не знаю, да и откуда мне знать.</font><br /></label>
+            </div>
+            </p>
+<!--            <p>-->
+<!--                <h2><font size="5" face="Candara">Рассматриваете ли вы альтернативные варианты развития событий?</font><br /></h2> &lt;!&ndash; break = перенос строки &ndash;&gt;-->
+<!--                <h2><font size="4" face="Candara Light">Падение звезд, зомби-апокалипсис или же долгожданное снятие карантинных мер и масок? Расскажите, что думаете!</font><br /></h2>-->
+<!--                <textarea name="comment" cols="100" rows="10" size="20"></textarea><br />-->
+<!--            </p>-->
+            <p>
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Поделиться своим мнением</button>
+            </p>
+    </form>
+</body>
+</html>
